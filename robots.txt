@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://sidorares.github.com/sitemap.xml 

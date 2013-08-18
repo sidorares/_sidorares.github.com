@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>{% block title %}r.va.gg{% endblock %}</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://r.va.gg/atom.xml" />
+    <script type="text/javascript" src="http://use.typekit.com/swo4snt.js"></script>
+    <script type="text/javascript">try{Typekit.load()}catch(e){}</script>  
+    <script type="text/javascript">
+      var _gaq = _gaq || []
+      _gaq.push(['_setAccount', 'UA-21373682-1'])
+      _gaq.push(['_trackPageview'])
+      setTimeout('_gaq.push(["_trackEvent", "15_seconds", "read"])', 15000)
+      !(function () {
+        var ga = document.createElement('script')
+        ga.type = 'text/javascript'
+        ga.async = true
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'
+        var s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(ga, s)
+      }())
+    </script>
+  </head>
+  <body>
+
+    <section class="content">
+      <h1>
+        <a href="/">r.va.gg</a>
+      </h1>
+
+      <section class="nav">
+        <section class="me">
+          <span>Find me</span>
+          <ul>
+            <li>on <a href="https://twitter.com/rvagg">Twitter / @rvagg</a></li>
+            <li>on <a href="https://twitter.com/github">GitHub / @rvagg</a></li>
+          </ul>
+        </section>
+        <section class="recent">
+          <span>Recent posts</span>
+          <ul>
+            {% for post in postSpecs %}
+              {% if loop.index < 4 %}
+                <li><a href="{{ post.path }}">{{ post.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </section>
+      </section>
+      <div style="clear: both;"></div>
+
+      {% block content %}{% endblock %}
+
+      <section class="footer">
+        &copy; Rod Vagg 2013, powered by <a href="https://github.com/rvagg/blorg">Blorg</a>
+        <br><a href="http://r.va.gg/atom.xml">Atom / RSS feed</a>
+      </section>
+
+    </section>
+
+  </body>
+</html>

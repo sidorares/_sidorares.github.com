@@ -1,10 +1,10 @@
-    <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en-us">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>Andrey Sidorov</title>
     <link rel="stylesheet" href="/style.css" type="text/css">
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://r.va.gg/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://andreysidorov/atom.xml" />
     <script type="text/javascript" src="http://use.typekit.com/swo4snt.js"></script>
     <script type="text/javascript">try{Typekit.load()}catch(e){}</script>
     <script type="text/javascript">
@@ -26,74 +26,36 @@
 
     <section class="content">
       <h1>
-        <a href="/">r.va.gg</a>
+        <a href="/">andreysidorov.com</a>
       </h1>
 
       <section class="nav">
         <section class="me">
           <span>Find me</span>
           <ul>
-            <li>on <a href="https://twitter.com/sidorares">Twitter / @rvagg</a></li>
-            <li>on <a href="https://twitter.com/sidorares">GitHub / @rvagg</a></li>
+            <li>on Twitter <a href="https://twitter.com/sidorares" class="twitter-follow-button" data-show-count="false" data-lang="ru">follow @sidorares</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+            <li>on Github <iframe src="http://ghbtns.com/github-btn.html?user=sidorares&type=follow&count=true"
+              allowtransparency="true" frameborder="0" scrolling="0" height="20"></iframe></li>
           </ul>
         </section>
         <section class="recent">
           <span>Recent posts</span>
           <ul>
-
-
+            
+ 
                 <li><a href="/2013/08/how-to-use-blorg.html">How to use Blorg</a></li>
-
-
-
-                <li><a href="/2013/08/learn-you-the-node.js.html">Learn You The Node.js</a></li>
-
-
-
-                <li><a href="/2013/06/leveldown-alternatives.html">LevelDOWN Alternatives</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+              
+ 
           </ul>
         </section>
       </section>
       <div style="clear: both;"></div>
 
-
+      
 
 <div id="for">
-
+  
 
     <section class="post-content">
 
@@ -113,278 +75,12 @@
 
     </section>
 
-
-
-    <section class="post-content">
-
-      <h2 id="learn-you-the-node.js"><a href="/2013/08/learn-you-the-node.js.html">Learn You The Node.js</a></h2>
-
-      <div class="post-meta">
-        <p class="byline">by Rod Vagg on August 14, 2013</p>
-        <p class="link"><a href="/2013/08/learn-you-the-node.js.html">Permalink &amp; Comments</a></p>
-        <!-- <p class="commentcount"><a href="/2013/08/learn-you-the-node.js.html#disqus_thread">Comments</a></p> -->
-      </div>
-
-      <section class="post-body">
-        <p><strong><a href="http://campjs.com/">CampJS</a></strong> has just finished, with a bigger crowd than last time around. It was lots of fun, and as usual, these events are more about meeting the people I collaborate, and socialise with online than anything else. There was a particularly large turn-out of the hackers on #polyhack, our Australian programmers channel on Freenode. Even <a href="https://twitter.com/mwotton">@mwotton</a>, our resident Haskell-troll was there! Lots of photos and news can be found on <a href="http://storify.com/campjs/campjs-ii">Storify</a>. The next one will likely be near Melbourne in February some time and I highly recommend it if you can get there.</p>
-<h3>Learn You The Node.js For Much Win (presentation)</h3>
-<p>I was struck last CampJS how many JavaScript newbies were there, or at least people who deal with JavaScript as a secondary language and therefore only have a cursory understanding of it. And by extension, there were not many people who had much understanding of Node. So I wanted to present some intro-to-Node material this time.</p>
-<p>I gave a 30 minute talk covering the very basics of <em>what Node <strong>is</strong></em>, called <strong>Learn You The Node.js For Much Win</strong>. Obviously the title is inspired by <em><a href="http://learnyouahaskell.com/">Learn You a Haskell For Great Good</a></em> and <em><a href="http://learnyousomeerlang.com/">Learn You Some Erlang For Great Good</a></em>. You can find my slides <a href="http://r.va.gg/presentations/campjs-learn-you-node/">here</a> (feel free to rip them off if you need to give a similar talk somewhere!). The video may be online at some point in the future.</p>
-<h3>Learn You The Node.js For Much Win (workshop)</h3>
-<p><img src="https://pbs.twimg.com/media/BRWaBeeCcAA9R7v.jpg" style="border-radius:4px; border: solid 2px white; box-shadow: 1px 1px 15px rgba(0,0,0,0.4);"></p>
-<p>The next morning, I gave a workshop on the same topic but it was much more hands-on. The inspiration for my workshop came from <a href="http://www.nodeconf.com/">NodeConf</a>, a couple of months earlier. <a href="https://twitter.com/substack">@substack</a> and <a href="https://twitter.com/maxogden">@maxogden</a> presented a workshop titled <strong>stream adventure</strong> which was a self-guided, interactive workshop for the terminal, built with Node. You can find it <a href="https://github.com/substack/stream-adventure">here</a> and install it from npm with <code>npm install stream-adventure -g</code>, I highly recommend it.</p>
-<p><a href="https://nodei.co/npm/stream-adventure/"><img src="https://nodei.co/npm/stream-adventure.png?downloads=true&amp;stars=true" alt="NPM"></a></p>
-<p>I was so inspired that I stole their code and made my own workshop application! <strong><a href="https://github.com/rvagg/learnyounode/">learnyounode</a></strong>. You can download and install it with <code>npm install learnyounode -g</code>.</p>
-<p><a href="https://nodei.co/npm/learnyounode/"><img src="https://nodei.co/npm/learnyounode.png?downloads=true&amp;stars=true" alt="NPM"></a></p>
-<p>The application itself is/was a series of 13 separate workshops. Starting off with a simple <em>HELLO WORLD</em> and ending with a JSON API HTTP server (contributed by the very clever <a href="https://twitter.com/sidorares">@sidorares</a>).</p>
-<p><img src="https://raw.github.com/rvagg/learnyounode/master/learnyounode.png" alt="learnyounode"></p>
-<p>Nobody actually managed to finish the workshops in the allotted 60 minutes, although <a href="http://twitter.com/alexdickson">@alexdickson</a>, an expert JavaScripter but Node-n00b was the first one I heard of finishing it not long after.</p>
-<p>The workshops attempt to focus on some of the core concepts of Node. There&#39;s lots of console output because that&#39;s easiest to validate but it introduces filesystem I/O, both synchronous and asynchronous and moves straight on to networking because that&#39;s what Node is so good at. An <em>HTTP CLIENT</em> example, introduces HTTP and is expanded on in <em>HTTP COLLECT</em> which introduces streams. <em>JUGGLING ASYNC</em> builds on <em>HTTP COLLECT</em> to introduce the complexities of managing parallel asynchronous activities. From there, it switches from network clients to network servers, first a simple TCP server in <em>TIME SERVER</em> and then using streams to serve files in <em>HTTP FILE SERVER</em> and transforming data with <em>HTTP UPPERCASERER</em>. The final exercise presents you with a more complex, closer-to-real-world example, an HTTP API server with multiple end-points.</p>
-<p>The entire workshop is designed to take longer than 1-hour, people ought to be able ot take it away and complete it later. It&#39;s also designed to be suitable for complete n00bs and also people with some experience, it ought to make a fun challenge for anyone already experienced with Node to see how quickly they can complete the examples (I believe I earned the honour of being the first person at NodeConf to finish stream-adventure in the allotted time!).</p>
-<p>The Node-experts at CampJS were thankfully helping out during the workshop so there wasn&#39;t much competition going on there.</p>
-<p>Many thanks to these expert Node nerds who hovered and helped people during the workshop and also did some test-driving of the workshop prior to the event:</p>
-<ul>
-<li><a href="https://twitter.com/nicholasf">Nicholas Faiz</a></li>
-<li><a href="https://twitter.com/cgiffard">Christopher Giffard</a></li>
-<li><a href="https://twitter.com/secoif">Tim Oxley</a> (who also poured his heart and soul into organising CampJS)</li>
-<li><a href="http://twitter.com/deoxxa">Conrad Pankoff</a></li>
-<li><a href="https://twitter.com/sidorares">Andrey Sidorov</a> (who also contributed the final exercise of the workshop)</li>
-<li><a href="https://twitter.com/EugeneWare">Eugene Ware</a> (who was also brilliant all weekend, running the local <a href="http://en.wikipedia.org/wiki/Sneakernet">sneakernet</a> because the network was so flakey)</li>
-</ul>
-<p><em>(I really hope I haven&#39;t missed anyone out there; so many quality nerds at CampJS!)</em></p>
-<p><img src="https://lh5.googleusercontent.com/-tKp0U1N7XNw/UgngKk01qqI/AAAAAAAAAoc/xxAOCTqMCZ0/w600-h800-no/campJS+%252870+of+118%2529.jpg" style="border-radius:4px; border: solid 2px white; box-shadow: 1px 1px 15px rgba(0,0,0,0.4);"></p>
-<p><em>Tim Oxley making a contribution during the workshop, along with Christopher Giffard (left) and Eugene Ware (right)</em></p>
-<p>I had the <a href="http://r.va.gg/presentations/campjs-learn-you-node/workshop.html">solutions</a> to the workshop ready on the big-screen and walked through some of the early solutions and talked through what was going on. I didn&#39;t expect many people to listen to those bits and the workshop was designed so you could totally zone-out and do it at your own pace if that suited.</p>
-<p>If anyone wants to run a similar style workshop for their local meet-up, using the same content, I&#39;d love to receive contributions to <strong>learnyounode</strong>. Alternatively, make your own! I extracted the core framework from <strong>learnyounode</strong> and it now lives separately as <strong><a href="https://github.com/rvagg/workshopper">workshopper</a></strong>.</p>
-<p><a href="https://nodei.co/npm/workshopper/"><img src="https://nodei.co/npm/workshopper.png?downloads=true&amp;stars=true" alt="NPM"></a></p>
-<p>I would love feedback from anyone in attendance or anyone that uses this tool to run their own workshops! <strong>learnyounode</strong> is already listed in Max Ogden&#39;s excellent <strong><a href="https://github.com/maxogden/art-of-node">The Art of Node</a></strong>, so I&#39;m looking forward to contributions to help turn this into a really useful teaching tool.</p>
-
-      </section>
-
-    </section>
-
-
-
-    <section class="post-content">
-
-      <h2 id="leveldown-alternatives"><a href="/2013/06/leveldown-alternatives.html">LevelDOWN Alternatives</a></h2>
-
-      <div class="post-meta">
-        <p class="byline">by Rod Vagg on June 7, 2013</p>
-        <p class="link"><a href="/2013/06/leveldown-alternatives.html">Permalink &amp; Comments</a></p>
-        <!-- <p class="commentcount"><a href="/2013/06/leveldown-alternatives.html#disqus_thread">Comments</a></p> -->
-      </div>
-
-      <section class="post-body">
-        <p>Since <strong><a href="https://github.com/rvagg/node-levelup">LevelUP</a></strong> v0.9, <strong><a href="https://github.com/rvagg/node-leveldown/">LevelDOWN</a></strong> has been an optional dependency, allowing you to switch in alternative back-ends.</p>
-<p>We have <strong><a href="https://github.com/rvagg/node-memdown">MemDOWN</a></strong>, a pure in-memory data-store, allowing you to run LevelUP against transient, and very fast storage.</p>
-<p>We also have <strong><a href="https://github.com/maxogden/level.js">level.js</a></strong> which works against <strong>IndexedDB</strong>, allowing you to run LevelUP in the browser!</p>
-<p>Since LevelUP just needs some basic primitives and a sorted bi-directional iterator, we can swap out the back-end with numerous alternatives.</p>
-<p>The easy targets are the forks of LevelDB that purport to <em>fix</em> or <em>improve</em> LevelDB in some way. I have another post brewing on what I think about the claims made in this area and how we ought to approach them, but that can come later. For now I have some packages in npm for you to try for yourself!</p>
-<h2>Basho</h2>
-<p>First of all we have <strong>leveldown-basho</strong> which bundles the <a href="https://github.com/basho/leveldb">Basho LevelDB fork</a> into LevelDOWN. See Matthew Von-Maszewski&#39;s <a href="https://speakerdeck.com/basho/optimizing-leveldb-for-performance-and-scale-ricon-east-2013">slides</a> from the recent Ricon East 2013 for more information on what they&#39;ve tried to do with LevelDB.</p>
-<p>In summary, Basho&#39;s aim is to optimise LevelDB &quot;for the server&quot;, particularly for high write throughput. They use &gt;1 compaction threads and relax the rules a little on overlapping keys for the lower levels. Plus a few other things that I won&#39;t get in to here.</p>
-<div class="highlight"><pre><span class="nv">$ </span>npm install levelup leveldown-basho
-</pre></div>
-
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">levelup</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;levelup&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">leveldown</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leveldown-basho&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">levelup</span><span class="p">(</span><span class="s1">&#39;/path/to/db&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">db</span><span class="o">:</span> <span class="nx">leveldown</span> <span class="p">})</span>
-<span class="c1">// go to work on `db`</span>
-</pre></div>
-
-<p><em>Disclaimer: some of the LevelDOWN and LevelUP tests are failing on the current build for this release, although I don&#39;t believe they should impact on standard usage but your mileage may vary...</em></p>
-<h2>HyperDex</h2>
-<p>Next, we have <strong>leveldown-hyper</strong>, which bundles a fork by the people behind <a href="http://hyperdex.org/">HyperDex</a>, a key-value store. Again their aim is to optimise LevelDB for a server environment. You can see some of their claims about performance <a href="http://hyperdex.org/performance/leveldb/">here</a>. I don&#39;t know as much about this fork, I&#39;ll investigate further when I have time, but they are also using multiple compaction threads to do the background work.</p>
-<div class="highlight"><pre><span class="nv">$ </span>npm install levelup leveldown-hyper
-</pre></div>
-
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">levelup</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;levelup&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">leveldown</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leveldown-hyper&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">levelup</span><span class="p">(</span><span class="s1">&#39;/path/to/db&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">db</span><span class="o">:</span> <span class="nx">leveldown</span> <span class="p">})</span>
-<span class="c1">// go to work on `db`</span>
-</pre></div>
-
-<h2><i><strike>Lies!</strike></i> Benchmarks!</h2>
-<p>OK, benchmarks kind of suck, particularly microbenchmarks. It&#39;s really hard to test something that&#39;s meaningful for everyone&#39;s use-case. But you can make pretty pictures with them and they can tell something of a story, even if it&#39;s just the first page of a novel.</p>
-<p>So here we go. I&#39;ve put together a simplistic benchmark that tries to test the kind of situation that these two forks are aiming to optimise for. In particular, high-throughput writes. There&#39;s a common claim that LevelDB has problems with writes because the compaction thread can hold up levels 0 and 1 while it&#39;s working on higher levels; and you really want to be flushing the new data as soon as possible so you can get more in. (Again, I have more to say on this &amp; the claims about &quot;fixing&quot; the problem in a later post).</p>
-<p>I have a sorted-write benchmark in the <a href="https://github.com/rvagg/node-leveldown/tree/master/bench">LevelDOWN repo</a> that tries to push in 10M pre-sorted entries as fast as possible, fully utilising Node&#39;s worker-threads for the job. So this isn&#39;t your typical browser scenario. An important point here is that <strong>Node is a unique environment when looking at LevelDB performance</strong>. It&#39;s not going to be a straightforward mapping of benchmark results obtained with other LevelDB bindings onto what we can achieve in Node.</p>
-<p>Because there are so many entries, instead of recording the time for individual writes, I&#39;ve recorded average time for batches of 1000 writes. Below you can see what the write-times look like when plotted over time. There are a bunch of outliers that are above the maximum Y of 0.6ms, but not enough to warrant distracting from the interesting behaviour below 0.6ms so I chopped it off there.</p>
-<p><strong>It is important to note that I&#39;m using the default options</strong> here and this is where I&#39;ll probably cop some flak. Basho in particular advocate a healthy amount of &quot;tuning&quot; to achieve appropriate performance. In particular the write-buffer defaults to only 4M and you can push data in faster (at the cost of compactions later on) by increasing this. I think the forks may even have additional tunables of their own that you can fiddle with. But, this whole tuning thing is a rabbit hole I don&#39;t dare go down right now!</p>
-<p>I&#39;m running this on an i7-2630QM CPU, plenty of RAM and an SSD.</p>
-<p>You can see that we managed to push in the 10M entries in just over 95 seconds with the plain <strong>Google LevelDB (v1.10.0)</strong>.</p>
-<p><img src="http://r.va.gg/images/2013/06/write_sorted_times_g.png" height=500 width=800 align="center" /></p>
-<hr>
-<p>Next up we have the HyperDex fork. The main difference here is that we have it working slightly faster in total and the write-times have been trimmed down a bit to be more consistent. Not a bad effort with default settings, quite a nice picture.</p>
-<p><img src="http://r.va.gg/images/2013/06/write_sorted_times_h.png" height=500 width=800 align="center" /></p>
-<hr>
-<p>Lastly we can see what Basho have done. They&#39;ve been on this case for a lot longer than HyperDex have and their fork, internally at least, diverges quite a bit from Google&#39;s LevelDB.</p>
-<p>We can see that the write-time has been considerably flattened; which is in line with what Basho claim and are aiming for, the consistency here is <strong>very</strong> impressive. Unfortunately we&#39;ve ended up with a total time that is <strong>double</strong> what it took Google&#39;s LevelDB to get the 10M entries in!</p>
-<p>No doubt this is probably something to do with the tunables, or perhaps I&#39;ve messed something up, anything&#39;s possible!</p>
-<p><img src="http://r.va.gg/images/2013/06/write_sorted_times_b.png" height=500 width=800 align="center" /></p>
-<hr>
-<h2>So?</h2>
-<p>If you take anything away from this, here&#39;s what I think it should be: <strong>Do your own benchmarks if performance <em>really</em> is an issue for you</strong>. You&#39;re going to need some kind of benchmark suite that is tailored to your particular application. This will not only let you choose the appropriate storage system but it will give you something to work with when you start to get in to the mire that is &quot;tunables&quot;.</p>
-<p>It&#39;s likely I won&#39;t be able to leave this alone and will be posting more benchmarks with some tweaking and tuning. I&#39;d love to have input from others on this too of course! The code for this is all in the LevelDOWN repo with both of these forks under appropriately named branches.</p>
-
-      </section>
-
-    </section>
-
-
-
-    <section class="post-content">
-
-      <h2 id="levelup-v0.9-released"><a href="/2013/05/levelup-v0.9-released.html">LevelUP v0.9 Released</a></h2>
-
-      <div class="post-meta">
-        <p class="byline">by Rod Vagg on May 21, 2013</p>
-        <p class="link"><a href="/2013/05/levelup-v0.9-released.html">Permalink &amp; Comments</a></p>
-        <!-- <p class="commentcount"><a href="/2013/05/levelup-v0.9-released.html#disqus_thread">Comments</a></p> -->
-      </div>
-
-      <section class="post-body">
-        <p><img src="https://twimg0-a.akamaihd.net/profile_images/3360574989/92fc472928b444980408147e5e5db2fa_bigger.png" alt="LevelDB"></p>
-<p>As per my <a href="http://r.va.gg/2013/05/levelup-v0.9-some-major-changes.html">previous post</a>, <strong><a href="https://github.com/rvagg/node-levelup">LevelUP</a> v0.9 has been released</strong>!</p>
-<p>I&#39;m doing a quick post about this release because it&#39;s got more changes in it than we normally see, including some things worth explaining.</p>
-<h3>Relationship to LevelDOWN</h3>
-<p>The biggest change is the removal of <a href="https://github.com/rvagg/node-leveldown/">LevelDOWN</a> as a dependency, you should <a href="http://r.va.gg/2013/05/levelup-v0.9-some-major-changes.html">review what I&#39;ve already said about this</a> as this will impact you if you&#39;re currently using LevelUP. In short, you&#39;ll either need to explicitly <code>npm install leveldown</code> or switch to using the new <a href="https://github.com/level/level">Level</a> package which bundles them both.</p>
-<p>Along with this change, we also get better <a href="http://browserify.org/">Browserify</a> support. See <a href="https://github.com/maxogden/level.js">level.js</a> for more information on this.</p>
-<h3>Chained batch</h3>
-<p>The other major change is the introduction of a new <strong>chained batch</strong> syntax, additional to the existing batch syntax. This method of creating and writing batch operations is much closer to the way LevelDB does batches and under certain circumstances you may find improved performance from using this method.</p>
-<p>If you call <code>db.batch()</code> with no arguments, you&#39;ll get a <code>Batch</code> object back which has the following operations: <code>put()</code>, <code>del()</code>, <code>clear()</code> and <code>write()</code>. The first three are chainable so you can call them one after the other to build your batch. <code>write()</code> is the only method that takes a callback because it submits the batch. Until you call <code>write()</code>, the batch is transient and can be discarded.</p>
-<p>Example from the <a href="https://github.com/rvagg/node-levelup#readme">README</a>:</p>
-<div class="highlight"><pre><span class="nx">db</span><span class="p">.</span><span class="nx">batch</span><span class="p">()</span>
-  <span class="p">.</span><span class="nx">del</span><span class="p">(</span><span class="s1">&#39;father&#39;</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;Yuri Irsenovich Kim&#39;</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="s1">&#39;dob&#39;</span><span class="p">,</span> <span class="s1">&#39;16 February 1941&#39;</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="s1">&#39;spouse&#39;</span><span class="p">,</span> <span class="s1">&#39;Kim Young-sook&#39;</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="s1">&#39;occupation&#39;</span><span class="p">,</span> <span class="s1">&#39;Clown&#39;</span><span class="p">)</span>
-  <span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Done!&#39;</span><span class="p">)</span> <span class="p">})</span>
-</pre></div>
-
-<h3>Some love for WriteStream</h3>
-<p>WriteStream got some attention in this release. On the main <code>createWriteStream()</code> method and on individual <code>write()</code> calls, you can now pass some new options:</p>
-<ul>
-<li><code>&#39;type&#39;</code> can switch from the default <code>&#39;put&#39;</code> to <code>&#39;del&#39;</code> so you can make a WriteStream that only deletes when you <code>write({ key: &#39;foo&#39; })</code>, or you can make individual writes delete: <code>write({ type: &#39;del&#39;, key: &#39;foo&#39; })</code>.</li>
-<li><code>&#39;keyEncoding&#39;</code> and <code>&#39;valueEncoding&#39;</code> will switch from default encodings for the current LevelUP instance. Again, you can specify them on the main <code>createWriteStream()</code> or on individual <code>write()</code> calls.</li>
-</ul>
-<h3>Other changes</h3>
-<ul>
-<li>A <a href="https://github.com/rvagg/node-levelup/pull/128">race condition</a> was fixed that allowed a <code>put()</code> to write to the store before an iterator was obtained when calling `createReadStream().</li>
-<li>ReadStream no longer emits a <code>&#39;ready&#39;</code> event.</li>
-<li>The <code>db</code> property on LevelUP instances can be used to get access to LevelDOWN or whatever LevelDOWN-substitute you are using (this was <code>_db</code>).</li>
-<li>Some very LevelDB-specific methods have been deprecated on LevelUP and the documentation now recommends either directly using LevelDOWN or calling via the <code>db</code> property. Specifically:<ul>
-<li><code>db.db.approximateSize()</code></li>
-<li><code>leveldown.repair()</code></li>
-<li><code>leveldown.destroy()</code></li>
-</ul>
-</li>
-<li>LevelDOWN got a new LevelDB method: <code>getProperty()</code> that currently understands 3 properties:<ul>
-<li><code>db.db.getProperty(&#39;leveldb.num-files-at-levelN&#39;)</code>: returns the number of files at level <em>N</em>, where N is an integer representing a valid level (e.g. &quot;0&quot;)&#39;).</li>
-<li><code>db.db.getProperty(&#39;leveldb.stats&#39;)</code>: returns a multi-line string describing statistics about LevelDB&#39;s internal operation.</li>
-<li><code>db.db.getProperty(&#39;leveldb.sstables&#39;)</code>: returns a multi-line string describing all of the <em>sstables</em> that make up contents of the current database.</li>
-</ul>
-</li>
-<li>Significantly improved ReadStream performance improvements (up to 50% faster).</li>
-<li>Some LevelDOWN memory leaks discovered and fixed.</li>
-<li>LevelDOWN upgraded to LevelDB@1.10.0, <a href="https://groups.google.com/forum/#!topic/node-levelup/bly-MiUzrZw">details here</a>.</li>
-</ul>
-<h3>Who you should thank</h3>
-<p>A lot of people put in work to this release. There&#39;s a <a href="https://github.com/rvagg/node-levelup#contributors">team of people</a> that can claim ownership of LevelUP, LevelDOWN and related projects and most of them have been involved in this release. You should follow these people on Twitter and GitHub!</p>
-<ul>
-<li><strong>Dominic Tarr</strong> (<a href="https://github.com/dominictarr">GitHub/dominictarr</a> / <a href="http://twitter.com/dominictarr">Twitter/@dominictarr</a>) contributed to the ReadStream fixes and is just a generally valuable &amp; awesome sage in the LevelDB + Node community.</li>
-<li><strong>Julian Gruber</strong> (<a href="https://github.com/juliangruber">GitHub/juliangruber</a> / <a href="http://twitter.com/juliangruber">Twitter/@juliangruber</a>) contributed the encoding options for WriteStreams and most of the work on the new chained <code>batch()</code>.</li>
-<li><strong>Matteo Collina</strong> (<a href="https://github.com/mcollina">GitHub/mcollina</a> / <a href="https://twitter.com/matteocollina">Twitter/@matteocollina</a>) contributed the <code>&#39;type&#39;</code> options for WriteStreams and most of the work on performance improvements to ReadStreams.</li>
-<li><strong>David Björklund</strong> (<a href="https://github.com/kesla">GitHub/kesla</a> / <a href="http://twitter.com/david_bjorklund">Twitter/@david_bjorklund</a>) also contributed work on ReadStream performance.</li>
-<li><strong>Max Ogden</strong> (<a href="https://github.com/maxogden">GitHub/maxogden</a> / <a href="http://twitter.com/maxogden">Twitter/@maxogden</a>) and <strong>Anton Whalley</strong> (<a href="https://github.com/No9">GitHub/No9</a> / <a href="https://twitter.com/antonwhalley">Twitter/@antonwhalley</a>) both worked on extracting most of the LevelDOWN test suite into <a href="https://github.com/rvagg/node-abstract-leveldown">AbstractLevelDOWN</a> to form a LevelDOWN-spec that&#39;s also runnable in browser environments.</li>
-</ul>
-<p>And others, who you can find in <a href="https://github.com/rvagg/node-levelup/pull/129">this 0.9 WIP thread</a>, plus additional users who reported &amp; found issues.</p>
-
-      </section>
-
-    </section>
-
-
-
-    <section class="post-content">
-
-      <h2 id="levelup-v0.9-some-major-changes"><a href="/2013/05/levelup-v0.9-some-major-changes.html">LevelUP v0.9 - Some Major Changes</a></h2>
-
-      <div class="post-meta">
-        <p class="byline">by Rod Vagg on May 20, 2013</p>
-        <p class="link"><a href="/2013/05/levelup-v0.9-some-major-changes.html">Permalink &amp; Comments</a></p>
-        <!-- <p class="commentcount"><a href="/2013/05/levelup-v0.9-some-major-changes.html#disqus_thread">Comments</a></p> -->
-      </div>
-
-      <section class="post-body">
-        <p><img src="https://twimg0-a.akamaihd.net/profile_images/3360574989/92fc472928b444980408147e5e5db2fa_bigger.png" alt="LevelDB"></p>
-<p><a href="https://github.com/rvagg/node-levelup">LevelUP</a> is still quite young and bound to go through some major shifts. It&#39;s best to not be too tied to immature APIs early in a project&#39;s lifetime.</p>
-<p>That said, we&#39;re very interested in stability so we try to keep breaking changes to a minimum. However, we&#39;re about to publish version 0.9 and there&#39;s one change that&#39;s not exactly a &quot;breaking&quot; change in the normal sense, but it is something that I need to explain because it will impact on almost everyone currently using LevelUP.</p>
-<h3>Severing the dependency on LevelDOWN</h3>
-<p>LevelUP depends on <a href="https://github.com/rvagg/node-leveldown/">LevelDOWN</a> to do its <em>LevelDB thing</em>. LevelDOWN was once part of LevelUP until we split it off to a discrete project that focuses entirely on acting as a direct C++ bridge between LevelDB and Node. We get to focus on making LevelUP an awesome LevelDB-ish interface without being tied directly to LevelDB implementation details (e.g. Iterators vs Streams).</p>
-<p>In fact, a new project was spawned to define the LevelDOWN interface that LevelUP requires. <a href="https://github.com/rvagg/node-abstract-leveldown">AbstractLevelDOWN</a> is a set of strict tests for the functionality that LevelUP uses and it also implements a basic abstract shell that can be extended to create additional back-ends for LevelUP.</p>
-<p>So far, there are 3 projects worth mentioning that extend AbstractLevelDOWN:</p>
-<ul>
-<li><p><strong><a href="https://github.com/maxogden/level.js">level.js</a></strong> operates on top of <a href="https://developer.mozilla.org/en-US/docs/IndexedDB">IndexedDB</a> (which is in turn implemented on top of <a href="https://code.google.com/p/leveldb/">LevelDB</a> in Chrome!).</p>
-</li>
-<li><p><strong><a href="https://github.com/No9/node-leveldown-gap">leveldown-gap</a></strong> is another browser implementation that uses <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/DOM/Storage#localStorage">localStorage</a> and is designed to be able to work in <a href="http://phonegap.com/">PhoneGap</a> applications.</p>
-</li>
-<li><p><strong><a href="https://github.com/rvagg/node-memdown">MemDOWN</a></strong> is a pure in-memory implementation that doesn&#39;t touch the disk. It&#39;s obviously not good for persistent data but sometimes that&#39;s not what you need.</p>
-</li>
-</ul>
-<p>Plus some other efforts to adapt other embedded and non-embedded data stores to the LevelDOWN interface. Additionally, there are other versions of LevelDB that can be used, including the fork that <a href="http://basho.com/">Basho</a> maintains for use in <a href="http://basho.com/riak/">Riak</a>. (I have a branch of LevelDOWN that uses this version of LevelDB that I&#39;ll release as soon as I can explain and demonstrate the performance differences to vanilla LevelDB for Node users).</p>
-<p>In short, LevelUP doesn&#39;t <em>need</em> LevelDOWN in the way it once did and LevelUP is turning into a more generic interface to sorted key/value storage systems, albeit with a distinct LevelDB-flavour.</p>
-<p>Since version 0.8 we&#39;ve supported a <code>&#39;db&#39;</code> option when you create a LevelUP instance. This option can be used to provide an alternative LevelDOWN-compatible back-end. Unfortunately, LevelDOWN being defined as a strict dependency of LevelUP means that each time you install it you have to compile LevelDOWN, even if you don&#39;t want it. So, we&#39;ve removed it as a dependency but it&#39;s still <em>wired up</em> so that that the only thing you need to do is actually install LevelDOWN alongside LevelUP and it&#39;ll take care of the rest.</p>
-<div class="highlight"><pre><span class="nv">$ </span>npm install levelup leveldown
-</pre></div>
-
-<p>From version 0.9 onwards, you&#39;ll need to do this, or you&#39;ll see an (informative) error.</p>
-<h3>Introducing &quot;Level&quot;</h3>
-<p>To make life easier, we&#39;re publishing an additional package in npm that will make this easier by bundling both LevelUP and LevelDOWN as dependencies and exposing LevelUP directly. The <strong><a href="https://github.com/level/level">Level</a></strong> package is a very simple wrapper that exists purely as a convenience. It&#39;ll track the same versioning as LevelUP so it&#39;s a straight substitution.</p>
-<div class="highlight"><pre><span class="nv">$ </span>npm install level
-</pre></div>
-
-<p>You can simply change your <code>&quot;dependencies&quot;</code> from <strong>&quot;levelup&quot;</strong> to <strong>&quot;level&quot;</strong>, plus you can use it just like LevelUP:</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">levelup</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;level&#39;</span><span class="p">)</span>
-<span class="kd">var</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">levelup</span><span class="p">(</span><span class="s1">&#39;./my.db&#39;</span><span class="p">)</span>
-<span class="nx">db</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="s1">&#39;yay!&#39;</span><span class="p">,</span> <span class="s1">&#39;it works!&#39;</span><span class="p">)</span>
-</pre></div>
-
-<h3>Switching things up</h3>
-<p>Now we have a properly pluggable back-end, expect to see a growing array of choice and innovation. The most exciting space at the moment is browser-land. Consider <strong>level.js</strong>:</p>
-<div class="highlight"><pre><span class="kd">var</span> <span class="nx">levelup</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;levelup&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">leveljs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;level-js&#39;</span><span class="p">)</span>
-
-<span class="nb">window</span><span class="p">.</span><span class="nx">db</span> <span class="o">=</span> <span class="nx">levelup</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">db</span><span class="o">:</span> <span class="nx">leveljs</span> <span class="p">})</span>
-
-<span class="nx">db</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;LevelUP string&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">db</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;name=&#39;</span> <span class="o">+</span> <span class="nx">value</span><span class="p">)</span>
-  <span class="p">})</span>
-<span class="p">})</span>
-</pre></div>
-
-<p>Yep, that&#39;s browser code. Simply <code>npm install levelup level-js</code> and run the module through <a href="http://browserify.org/">Browserify</a> and you get the full LevelUP API in your browser!</p>
-<hr>
-<p>Stay tuned! This is just one step in the quest for a truly modular database system that lets you build a database that suits your applications and not the other way around.</p>
-
-      </section>
-
-    </section>
-
-
+  
 </div>
 
   <section class="pager">
-
-
-
-      <div class="next">
-        <a href="/page1.html">&laquo; Older posts</a>
-      </div>
-
-
+    
+ 
   </section>
   <div style="clear: both;"></div>
 

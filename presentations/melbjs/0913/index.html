@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Markdown Demo</title>
+
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/default.css" id="theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+                <section data-markdown data-separator="---">
+                    <script type="text/template">
+                        ## Debug your JS from VIM
+                        ---
+                        ## Debug Your JS from JS
+                        ---
+                        ## Protocols
+                        ---
+                        ### JS side:
+                        - V8 debugger protocol
+                        - Chrome developer tools protocol
+                        ---
+                        ### VIM:
+                        - vim-netbeans protocol
+                        ---
+                        ### node.js
+                        - agent talks with both debuggee and vim
+                        - node.js/webkit - [V8 Protocol/DevTools Remote Protocol] <-> agent <-> [netbeans] - VIM
+                        ---
+                        ![Agent diagramm](agent.png)
+                        ---
+                        ## Demos:
+                        - debug running node.js script
+                        - debug script in html page
+                    </script>
+                </section>
+                <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+                <section data-markdown="v8protocol.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+                <section data-markdown="cdt-protocol.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+                <section data-markdown="netbeans-protocol.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+
+                <!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
+                <section data-markdown data-separator="^\n---\n$" data-vertical="^\n--\n$">
+                    <script type="text/template">
+                        ## Demos!!!
+
+                        --
+
+                        ## Q&A
+
+                        #### links:
+                          - @sidorares (twitter/github)
+                          - https://github.com/sidorares/node-vim-debugger
+                          - https://github.com/clehner/node-vim-netbeans
+                          - https://github.com/admazely/inspector
+                          - https://github.com/cyrus-and/chrome-remote-interface
+                          - https://developers.google.com/chrome-developer-tools/docs/debugger-protocol
+                    </script>
+                </section>
+            </div>
+		</div>
+
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme,
+				transition: Reveal.getQueryHash().transition || 'default',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../notes/notes.js' }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
